@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&family=Roboto+Slab:wght@500&display=swap');
 
+
+
 body, html {
     margin: 0;
     padding: 0;
@@ -16,7 +18,7 @@ body, html {
     align-items: center;
 
     width: 100vw;
-    height: 11vh;
+    height: 75px;
     padding: 0 0px;
     background-color: #55324a;
     color: #fff;
@@ -74,8 +76,8 @@ body, html {
 
 .header-li {
     position: fixed;
-    left: 50vw;
-    top: 10.9vh;
+    left: 0;
+    top: 75px;
     right: 0;
     
     display: flex;
@@ -83,10 +85,8 @@ body, html {
     align-items: center;
     justify-content: center;
     
-    background: linear-gradient(0deg, rgb(123, 62, 104) 0%, #55324a 100%);
+    background: linear-gradient(0deg, rgb(126, 65, 106) 0%, #55324a 100%);
     border-bottom: solid 2px #262626;
-    border-left: solid 2px #262626;
-    border-radius: 0px 0px 0px 16px;
 
     z-index: 1;
     
@@ -125,6 +125,14 @@ body, html {
 #actividades {
     scroll-margin-top: 85px;
 }
+
+
+
+
+
+
+
+
 
 .first-section {
     height: 100vh;
@@ -181,6 +189,7 @@ body, html {
 
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .second-section__title {
@@ -188,7 +197,6 @@ body, html {
     justify-content: center;
     background-color: #3d2435;
     width: 100vw;
-    margin-top: 1.5vh;
     box-shadow: 0px 0px 10px #000;
 }
 
@@ -207,10 +215,7 @@ body, html {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1.2vh;
-    margin-bottom: 1.2vh;
     
-    width: 85vw;
     font-size: 17px;
     letter-spacing: 1px;
     text-shadow: 0px 0px 1px #000000;
@@ -239,7 +244,7 @@ body, html {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -247,7 +252,7 @@ body, html {
     background-color: #3d2435;
     width: 100vw;
     height: 11vh;
-    margin-top: 20px;
+    margin-top: 3vh;
     box-shadow: 0px 0px 10px #000;
 
     margin-bottom: 15px;
@@ -273,15 +278,16 @@ body, html {
     height: 250px;
     width: 250px;
 
-    margin: 10px;
+    margin: 1vh;
     border: 2px solid rgba(0, 0, 0, 0.856)151;
     border-radius: 16px;
     box-shadow: 0px 0px 10px #000;
 }
 
 .third-section img:nth-child(5) {
-    margin-bottom: 20px;
+    margin-bottom: 3vh;
 }
+
 
 
 
@@ -304,7 +310,7 @@ body, html {
     height: 11vh;
     box-shadow: 0px 0px 10px #000;
 
-    margin-bottom: 10px;
+    margin-bottom: 2vh;
 }
 
 .fourth-section__header header {
@@ -320,10 +326,14 @@ body, html {
     height: 250px;
     width: 250px;
 
-    margin: 10px;
+    margin: 1vh;
     border: 2px solid rgba(0, 0, 0, 0.856)151;
     border-radius: 16px;
     box-shadow: 0px 0px 10px #000;
+}
+
+.fourth-section img:nth-child(2) {
+    margin-bottom: 3vh;
 }
 
 
