@@ -5,6 +5,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Roboto Slab', serif;
+    background-color: #000;
 
     max-height: 100vh;
     max-width: 100vw;
@@ -90,7 +91,6 @@ body, html {
 
 .header-content {
     margin-top: 20px;
-    padding-bottom: 50px;
 }
 
 .slider {
@@ -219,12 +219,20 @@ footer {
 
     .first-section {
         background-color: #000;
-        height: 105vh;
     }
 
+    .slider-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    
     .slider-img img {
-        width: 95vw;
-        margin-top: 63px;
+        max-width: 100%;
+        max-height: 100%;
+        width: 90%;
+        margin-top: 5%;
         border: 2px solid #000000;
         border-radius: 16px;
         box-shadow: 0px 0px 4px #ffffff9e;
@@ -232,16 +240,15 @@ footer {
     }
 
     .swiper-button-next {
-        color: #ffffff;
-        text-shadow: 0px 0px 5px #b60909;
+        color: #ffffff00;
         right: 20px;
     }
     
     .swiper-button-prev {
-        color: #ffffff;
-        text-shadow: 0px 0px 5px #b60909;
-        left: 20px;
+        color: #ffffff00;
+        left: 40px;
     }
+
 
 
 
