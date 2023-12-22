@@ -17,13 +17,14 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    top: 0;
 
     width: 100vw;
     height: 75px;
     padding: 0 0px;
-    background-color: #55324a;
+    background-color: #2a1c10;
     color: #fff;
-    border-bottom: 2px solid #262626;
+    box-shadow: 0px 0px 5px #000;
 
     z-index: 1;
 }
@@ -131,7 +132,8 @@ body, html {
 .slider-img img {
     display: block;
     margin: 0 auto;
-    width: 400px;
+    width: 700px;
+    margin: 10px auto;
 }
 
 .btn-overlay {
@@ -148,6 +150,37 @@ body, html {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+.swiper {
+    margin-top: 100px;
+}
+
+
+.imagen {
+    border-radius: 24px;
+    box-shadow: 0px 0px 5px #fff;
+}
+
+.imagen-1 {
+    content: url(atlantica-media/atlantica-desc.jpeg);
+}
+
+.imagen-2 {
+    content: url(atlantica-media/atlantica-desc2.jpeg);
+}
+
+.imagen-3 {
+    display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #00000000;
+}
+
+
+
 
 
 
@@ -203,9 +236,57 @@ footer {
 
 
 
+@media (min-width: 800px) {
+    .swiper-button-next {
+        right: 20px;
+    }
 
+    .swiper-button-prev {
+        left: 40px;
+    }
+}
 
-@media (max-width: 1000px){
+@media (min-width: 1200px) {
+    .swiper-button-next {
+        right: 200px;
+    }
+
+    .swiper-button-prev {
+        left: 220px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .swiper-button-next {
+        right: 350px;
+    }
+
+    .swiper-button-prev {
+        left: 370px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .swiper-button-next {
+        right: 540px;
+    }
+
+    .swiper-button-prev {
+        left: 560px;
+    }
+}
+
+@media (min-width: 2400px) {
+    .swiper-button-next {
+        right: 800px;
+    }
+
+    .swiper-button-prev {
+        left: 820px;
+    }
+}
+
+@media (max-width: 800px) {
     body, html {
         margin: 0;
         padding: 0;
@@ -219,6 +300,10 @@ footer {
 
     .first-section {
         background-color: #000;
+    }
+    
+    .first-section-dekstop {
+        display: none;
     }
 
     .slider-img {
@@ -237,6 +322,7 @@ footer {
         border-radius: 16px;
         box-shadow: 0px 0px 4px #ffffff9e;
         margin-bottom: 10px;
+        max-width: 500px;
     }
 
     .swiper-button-next {
@@ -247,6 +333,18 @@ footer {
     .swiper-button-prev {
         color: #ffffff00;
         left: 40px;
+    }
+
+    .imagen-1 {
+        content: url(atlantica-media/atlantica1.jpeg);
+    }
+
+    .imagen-2 {
+        content: url(atlantica-media/atlantica2.jpeg);
+    }
+
+    .imagen-3 {
+        display: block;
     }
 
 
@@ -264,7 +362,7 @@ footer {
     }
 
     .second-section nav {
-        background-color: #55324a;
+        background-color: #2a1c10;
         border-radius: 0px 16px 16px 0px;
         border: 2px solid #000;
         border-left: none;

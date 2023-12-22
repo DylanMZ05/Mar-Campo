@@ -31,13 +31,6 @@ body, html {
     z-index: 1;
 }
 
-.header-container.fixed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #2a1c106c;
-}
-
 .header-logo {
     display: flex;
 }
