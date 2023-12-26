@@ -12,6 +12,8 @@ body, html {
 
     width: 100%;
     scroll-behavior: smooth;
+
+    overflow-x: hidden;
 }
 
 .header-container {
@@ -204,10 +206,13 @@ body, html {
 .second-section__title {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #2a1c10;
     width: 100vw;
+    height: 11vh;
     box-shadow: 0px 0px 10px #000;
     margin: 20px 0px;
+
 }
 
 .second-section header {
@@ -289,7 +294,7 @@ body, html {
     justify-content: center;
     align-items: center;
 
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .third-section__header {
@@ -329,6 +334,7 @@ body, html {
 
 .fourth-section {
     background-color: #454545;
+    padding-bottom: 30px;
 }
 
 .fourth-section__img div,
@@ -368,9 +374,10 @@ body, html {
     margin: 1vh;
 }
 
-.fourth-section__img div {
-    padding: 30px 0;
+.fourth-section__img-1 {
+    margin-top: 30px;
 }
+
 
 
 
@@ -430,6 +437,9 @@ footer {
     font-size: 18px;
     margin: 0;
 }
+
+
+
 
 
 
@@ -611,7 +621,7 @@ footer {
     }
 
     .fourth-section__img-cont {
-        margin: 0 30px;
+        margin: 30px 30px 0;
     }
 
 
@@ -638,4 +648,54 @@ footer {
         align-items: center;
         padding: 15px 0px;
     }
+}
+
+
+
+
+
+
+
+/* ANIMACIONES */ 
+
+.animation{
+    transition: transform .5s ease;
+}
+
+.animation:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+.header-li-a {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.header-li-a:hover {
+    color: #c78449;
+}
+
+.header-li-a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    background-color: rgb(140, 93, 52);
+    visibility: hidden;
+    transition: width 0.3s ease, visibility 0.3s ease;
+}
+
+.header-li-a:hover::after {
+    width: 100%;
+    visibility: visible;
 }
