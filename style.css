@@ -720,3 +720,12 @@ footer {
         opacity: 1;
     }
 }
+
+.item {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+}
